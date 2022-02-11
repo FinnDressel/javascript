@@ -1,0 +1,14 @@
+div{
+    float: left;
+    width: 40px;
+    border: #999 1px solid;
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+}
+
+button{
+    height: 50px;
+    width: 400px;
+}
+
