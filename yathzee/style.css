@@ -1,4 +1,4 @@
-div{
+.dice{
     float: left;
     width: 40px;
     border: #999 1px solid;
@@ -13,5 +13,9 @@ button{
 }
 
 .scoreboard{
-
+    overflow: hidden;
+    border: #999 1px solid;
+    text-align: center;
+    width: 500px;
 }
+
