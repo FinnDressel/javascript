@@ -6,15 +6,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<script src="yahtzee.js"></script>
 
-<button id="btn" onclick="clicks(); roll();">Roll Dice</button>
 
+<button id="btn" >Roll Dice</button>
+
+<div id="dice0" class="dice">0</div>
 <div id="dice1" class="dice">0</div>
 <div id="dice2" class="dice">0</div>
 <div id="dice3" class="dice">0</div>
 <div id="dice4" class="dice">0</div>
-<div id="dice5" class="dice">0</div>
 <br><br><br>
 <h2>Current total</h2>
 <h2 id="total"></h2>
@@ -26,36 +26,42 @@
 <div class="scoreboard">
     <div class="scoreboardPart1">
         <p>Ones</p>
-    <input class="scoreboard" id="scoreOne">
+        <div class="scoreboard" id="score1" data-value="1">0</div>
         <p>Two's</p>
-        <input class="scoreboard" id="scoreTwo">
+        <div class="scoreboard" id="score2" data-value="2">0</div>
         <p>Threes</p>
-        <input class="scoreboard" id="scoreThree">
+        <div class="scoreboard" id="score3" data-value="3">0</div>
         <p>Fours</p>
-        <input class="scoreboard" id="scoreFour">
+        <div class="scoreboard" id="score4" data-value="4">0</div>
         <p>Fives</p>
-        <input class="scoreboard" id="scoreFive">
+        <div class="scoreboard" id="score5" data-value="5">0</div>
         <p>Sixes</p>
-        <input class="scoreboard" id="scoreSix">
+        <div class="scoreboard" id="score6" data-value="6">0</div>
         <h2>Total score</h2>
-        <input class="scoreboard" id="scoreTotal1">
+        <div class="scoreboard" id="scoreTotal1"></div>
+        <p>Bonus</p>
+        <div id="bonus" class="scoreboard"></div>
+        <h2>Totaal + bonus</h2>
+        <div id="scoreTotal2" class="scoreboard"></div>
     </div>
     <div class="scoreboardPart2" id="PartTwo">
         <p>Three of kind</p>
-    <input class="scoreboard" id="scoreSeven">
+        <div class="scoreboard" id="score7">0</div>
         <p>Carre</p>
-    <input class="scoreboard" id="scoreEigth">
+        <div class="scoreboard" id="score8">0</div>
         <p>Full House</p>
-    <input class="scoreboard" id="scoreNine">
+        <div class="scoreboard" id="score9">0</div>
         <p>Small Street</p>
-    <input class="scoreboard" id="scoreTen">
+        <div class="scoreboard" id="score10">0</div>
         <p>Big Street</p>
-    <input class="scoreboard" id="scoreTwelve">
+        <div class="scoreboard" id="score12">0</div>
+        <p>Chance</p>
+        <div id="chance" class="scoreboard"></div>
         <h2>Total score</h2>
-    <input class="scoreboard" id="scoreTotal2">
+        <div class="scoreboard" id="scoreTotal3"></div>
     </div>
 </div>
-
+<script src="yahtzee.js"></script>
 </body>
 
 </html>

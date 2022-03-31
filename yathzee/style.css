@@ -12,10 +12,5 @@ button{
     width: 400px;
 }
 
-.scoreboard{
-    overflow: hidden;
-    border: #999 1px solid;
-    text-align: center;
-    width: 500px;
-}
+
 
