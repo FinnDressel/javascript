@@ -41,6 +41,10 @@ document.getElementById('score11').addEventListener('click',function () {
     bigStraight();
 });
 
+document.getElementById('chance').addEventListener('click',function () {
+    chance();
+});
+
 function getRandomIntInclusive(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -215,9 +219,9 @@ function bigStraight(){
 }
 
 function chance(){
-    for (let i = 0; i <5; i++){
-        if (diceObj[i].value == i){
-
-        }
+    let total = 0;
+    for (let i = 0; i < 5; i++){
+        total += parseInt(diceObj[i].value);
     }
+    document.getElementById('chance').innerHTML = total;
 }
