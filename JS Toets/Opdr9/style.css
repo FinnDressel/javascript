@@ -1,0 +1,65 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 10px */
+}
+body {
+    background-color: mediumpurple;
+    font-family: "Courier new", monospace;
+    line-height: 1.7;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.1rem;
+
+    min-height: 100vh;
+    min-width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-top: 5rem;
+}
+.button-container {
+    display: flex;
+    margin-bottom: 5rem;
+}
+.button {
+    padding: 1rem 3rem;
+    font-size: 5rem;
+    background-color: pink;
+    border-radius: 2rem;
+}
+.container {
+    border: 2px solid white;
+    width: 90vw;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container__item {
+    flex: 0 0 calc(100% / 7);
+    padding: 2rem;
+
+    font-size: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container__item:nth-child(5n) {
+    background-color: red;
+}
+.container__item:nth-child(5n + 1) {
+    background-color: blue;
+}
+.container__item:nth-child(5n + 2) {
+    background-color: green;
+}
+.container__item:nth-child(5n + 3) {
+    background-color: yellow;
+}
+.container__item:nth-child(5n + 4) {
+    background-color: purple;
+}
